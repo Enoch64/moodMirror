@@ -9,36 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        LiveCameraPage().tabItem{
-            Image(systemName: "house.fill")
-            Text("Home")
-        }
-        
-        CallPage().tabItem{
-            Image(systemName: "camera.fill")
-            Text("Call Page")
-        }
-        
+        #if os(iOS)
+        iOSSpecificView()
+        #elseif os(macOS)
+        macOSSpecificView()
+        #else
+        Text("Unsupported platform")
+        #endif
     }
 }
 
-struct LiveCameraPage: View {
-    var body: some View {
-        VStack {
-            Text("Live Camera Mode")
-                .font(.title)
-            Button(action: {
-                print("First Page Button clicked!")
-            }) {
-                Text("Go to First Page Details")
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-            }
-        }
-        .padding()
-    }
+#Preview {
+    ContentView()
 }
 
 struct CallPage: View {
@@ -57,6 +39,14 @@ struct CallPage: View {
             }
         }
         .padding()
+
+        #if os(iOS)
+        iOSSpecificView()
+        #elseif os(macOS)
+        macOSSpecificView()
+        #else
+        Text("Unsupported platform")
+        #endif
     }
 }
 

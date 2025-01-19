@@ -30,6 +30,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		6DE3A4E92D3C7B6E007BA458 /* Platforms */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Platforms;
+			sourceTree = "<group>";
+		};
 		C0A2F4D92D3C70B800013474 /* frontend */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = frontend;
@@ -67,6 +72,7 @@
 			children = (
 				C0A2F4D92D3C70B800013474 /* frontend */,
 				C0A2F4D82D3C70B800013474 /* Products */,
+				6DE3A4E92D3C7B6E007BA458 /* Platforms */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +102,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				6DE3A4E92D3C7B6E007BA458 /* Platforms */,
 				C0A2F4D92D3C70B800013474 /* frontend */,
 			);
 			name = frontend;
