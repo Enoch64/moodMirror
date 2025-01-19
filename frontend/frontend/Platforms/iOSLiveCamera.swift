@@ -23,6 +23,11 @@ struct LiveCameraScreen: View {
                 )
                 .padding()
 
+            Text(cameraManager.serverResponse) // Display the server response
+                .font(.subheadline)
+                .foregroundColor(.blue)
+                .padding()
+
         }
         .navigationTitle("Live Camera View")
         .onAppear {
@@ -34,7 +39,9 @@ struct LiveCameraScreen: View {
     }
 }
 
+
 class CameraManager: NSObject, ObservableObject {
+    @Published var serverResponse: String = "Waiting for server response..."
     private var captureSession: AVCaptureSession?
     private var videoOutput: AVCaptureVideoDataOutput?
     private var previewLayer: AVCaptureVideoPreviewLayer?
@@ -98,7 +105,41 @@ class CameraManager: NSObject, ObservableObject {
     func getPreviewLayer() -> AVCaptureVideoPreviewLayer? {
         return previewLayer
     }
+
+    private func uploadImageToServer(data: Data) {
+        let url = URL(string: "http://10.19.128.182:5729/upload")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/octet-stream", forHTTPHeaderField: "Content-Type")
+
+        let task = URLSession.shared.uploadTask(with: request, from: data) { responseData, response, error in
+            if let error = error {
+                DispatchQueue.main.async {
+                    self.serverResponse = "Upload failed: \(error.localizedDescription)"
+                }
+                return
+            }
+
+            if let httpResponse = response as? HTTPURLResponse {
+                DispatchQueue.main.async {
+                    self.serverResponse = "Status: \(httpResponse.statusCode)"
+                }
+            }
+
+            if let responseData = responseData, let responseString = String(data: responseData, encoding: .utf8) {
+                DispatchQueue.main.async {
+                    self.serverResponse = responseString
+                }
+            } else {
+                DispatchQueue.main.async {
+                    self.serverResponse = "No response data received"
+                }
+            }
+        }
+        task.resume()
+    }
 }
+
 
 extension CameraManager: AVCaptureVideoDataOutputSampleBufferDelegate {
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
@@ -143,38 +184,38 @@ extension CameraManager: AVCaptureVideoDataOutputSampleBufferDelegate {
         }
     }
 
-    private func uploadImageToServer(data: Data) {
-        // Replace with your backend URL
-        let url = URL(string: "http://10.19.128.182:5729/upload")!
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        request.setValue("application/octet-stream", forHTTPHeaderField: "Content-Type")
-
-        // Create the upload task
-        let task = URLSession.shared.uploadTask(with: request, from: data) { responseData, response, error in
-            if let error = error {
-                print("Failed to upload image: \(error.localizedDescription)")
-                return
-            }
-
-            // Check the HTTP response status
-            if let httpResponse = response as? HTTPURLResponse {
-                print("Server responded with status code: \(httpResponse.statusCode)")
-            }
-
-            // Process the response data
-            if let responseData = responseData {
-                if let responseString = String(data: responseData, encoding: .utf8) {
-                    print("Server response: \(responseString)")
-                } else {
-                    print("Unable to decode server response")
-                }
-            } else {
-                print("No response data received from the server")
-            }
-        }
-        task.resume()
-    }
+//    private func uploadImageToServer(data: Data) {
+//        // Replace with your backend URL
+//        let url = URL(string: "http://10.19.128.182:5729/upload")!
+//        var request = URLRequest(url: url)
+//        request.httpMethod = "POST"
+//        request.setValue("application/octet-stream", forHTTPHeaderField: "Content-Type")
+//
+//        // Create the upload task
+//        let task = URLSession.shared.uploadTask(with: request, from: data) { responseData, response, error in
+//            if let error = error {
+//                print("Failed to upload image: \(error.localizedDescription)")
+//                return
+//            }
+//
+//            // Check the HTTP response status
+//            if let httpResponse = response as? HTTPURLResponse {
+//                print("Server responded with status code: \(httpResponse.statusCode)")
+//            }
+//
+//            // Process the response data
+//            if let responseData = responseData {
+//                if let responseString = String(data: responseData, encoding: .utf8) {
+//                    print("Server response: \(responseString)")
+//                } else {
+//                    print("Unable to decode server response")
+//                }
+//            } else {
+//                print("No response data received from the server")
+//            }
+//        }
+//        task.resume()
+//    }
 }
 
 
