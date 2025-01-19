@@ -16,6 +16,7 @@ def upload_image():
     # get the data from the post request
     data = request.data
     print(data)
+    
     # Acknowledge that the file has been received
     return "File uploaded successfully", 200
 

@@ -51,6 +51,7 @@ class CameraManager: NSObject, ObservableObject, AVCaptureVideoDataOutputSampleB
     var captureSession: AVCaptureSession? // Changed from private to internal
     private var videoOutput: AVCaptureVideoDataOutput?
     private var timer: Timer?
+    private var lastUploadTime: Date?
 
     @Published var capturedImage: UIImage?
 
@@ -123,6 +124,14 @@ class CameraManager: NSObject, ObservableObject, AVCaptureVideoDataOutputSampleB
         request.setValue("application/octet-stream", forHTTPHeaderField: "Content-Type")
 
         let imageData = image.jpegData(compressionQuality: 0.5)
+        
+        // Check if the last upload time was more than 1 second ago
+        if let lastUploadTime = lastUploadTime, Date().timeIntervalSince(lastUploadTime) < 1 {
+            return
+        }
+        
+        lastUploadTime = Date()
+        
         let task = URLSession.shared.uploadTask(with: request, from: imageData) { data, response, error in
             if let error = error {
                 print("Error uploading image: \(error)")
