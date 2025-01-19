@@ -23,35 +23,38 @@ class ViewController: NSViewController {
         super.viewDidLayout()
 
         if let screenFrame = NSScreen.main?.frame {
-            // Centering the remote view (full screen)
+            // Centering the remote view (not fullscreen)
+            let remoteViewWidth: CGFloat = 640
+            let remoteViewHeight: CGFloat = 480
             remoteView.frame = CGRect(
-                x: (screenFrame.width - screenFrame.width) / 2,  // Horizontal center
-                y: (screenFrame.height - screenFrame.height) / 2, // Vertical center
-                width: screenFrame.width,  // Full screen width
-                height: screenFrame.height // Full screen height
+                x: (screenFrame.width - remoteViewWidth) / 2,
+                y: (screenFrame.height - remoteViewHeight) / 2,
+                width: remoteViewWidth,
+                height: remoteViewHeight
             )
             
-            // Centering the local view (smaller view)
-            let localViewWidth: CGFloat = 135
-            let localViewHeight: CGFloat = 240
-            localView.frame = CGRect(
-                x: (screenFrame.width - localViewWidth) / 2, // Horizontal center
-                y: (screenFrame.height - localViewHeight) / 2, // Vertical center
-                width: localViewWidth, // Set the width of the local view
-                height: localViewHeight // Set the height of the local view
-            )
-            }
+            // Local view at top-left with padding from the top
+                    let localViewWidth: CGFloat = 135
+                    let localViewHeight: CGFloat = 240
+                    let topPadding: CGFloat = 40
+
+                    localView.frame = CGRect(
+                        x: 20,
+                        y: topPadding,
+                        width: localViewWidth,
+                        height: localViewHeight
+                    )
+        }
     }
 
+
     func initView() {
-        // Initialize the remote video window.
         remoteView = NSView()
         self.view.addSubview(remoteView)
-        // Initialize the local video window.
+
         localView = NSView()
         self.view.addSubview(localView)
 
-        // Initialize the RTC instance
         if let appId = ProcessInfo.processInfo.environment["APP_ID"]{
             print(appId)
             agoraKit = AgoraRtcEngineKit.sharedEngine(withAppId: appId, delegate: self)
@@ -134,6 +137,7 @@ class ViewController: NSViewController {
         startPreview()  // Start the local preview
         joinChannel()  // Join the Agora channel
     }
+    
 }
 
 extension ViewController: AgoraRtcEngineDelegate {
@@ -160,7 +164,6 @@ extension ViewController: AgoraRtcEngineDelegate {
 
     //Callback when the remote user or anchor leaves the current channel
     func rtcEngine(_ engine: AgoraRtcEngineKit, didOfflineOfUid uid: UInt, reason: AgoraUserOfflineReason) {
-        // Print debug information
         print("User (uid) went offline due to (reason)")
         let videoCanvas = AgoraRtcVideoCanvas()
         videoCanvas.uid = uid

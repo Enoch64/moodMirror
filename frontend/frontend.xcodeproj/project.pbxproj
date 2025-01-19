@@ -26,6 +26,7 @@
 		C03F029F2D3CC4E2009910EB /* VideoCodecDec in Frameworks */ = {isa = PBXBuildFile; productRef = C03F029E2D3CC4E2009910EB /* VideoCodecDec */; };
 		C03F02A12D3CC4E2009910EB /* VideoCodecEnc in Frameworks */ = {isa = PBXBuildFile; productRef = C03F02A02D3CC4E2009910EB /* VideoCodecEnc */; };
 		C03F02A32D3CC4E2009910EB /* VirtualBackground in Frameworks */ = {isa = PBXBuildFile; productRef = C03F02A22D3CC4E2009910EB /* VirtualBackground */; };
+		C03F02E22D3CF978009910EB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C03F02E12D3CF978009910EB /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 				C03F02892D3CC4E2009910EB /* ClearVision in Frameworks */,
 				C03F02812D3CC4E2009910EB /* AIAECLL in Frameworks */,
 				C03F028B2D3CC4E2009910EB /* ContentInspect in Frameworks */,
+				C03F02E22D3CF978009910EB /* Kingfisher in Frameworks */,
 				C03F029D2D3CC4E2009910EB /* VideoAv1CodecEnc in Frameworks */,
 				C03F02972D3CC4E2009910EB /* SpatialAudio in Frameworks */,
 				C03F028F2D3CC4E2009910EB /* FaceDetection in Frameworks */,
@@ -167,6 +169,7 @@
 				C03F029E2D3CC4E2009910EB /* VideoCodecDec */,
 				C03F02A02D3CC4E2009910EB /* VideoCodecEnc */,
 				C03F02A22D3CC4E2009910EB /* VirtualBackground */,
+				C03F02E12D3CF978009910EB /* Kingfisher */,
 			);
 			productName = frontend;
 			productReference = C0A2F4D72D3C70B800013474 /* frontend.app */;
@@ -246,6 +249,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				C03F027D2D3CC4E2009910EB /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */,
+				C03F02E02D3CF978009910EB /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C0A2F4D82D3C70B800013474 /* Products */;
@@ -653,6 +657,14 @@
 				minimumVersion = 4.5.0;
 			};
 		};
+		C03F02E02D3CF978009910EB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -750,6 +762,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C03F027D2D3CC4E2009910EB /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
 			productName = VirtualBackground;
+		};
+		C03F02E12D3CF978009910EB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C03F02E02D3CF978009910EB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
