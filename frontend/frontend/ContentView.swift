@@ -9,10 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        #if os(iOS)
+        #if os(macOS)
+        macOSSpecificView()
+        #elseif os(iOS)
         iOSSpecificView()
-//        #elseif os(macOS)
-//        macOSSpecificView()
         #else
         Text("Unsupported platform")
         #endif
