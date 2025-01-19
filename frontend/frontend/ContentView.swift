@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-<<<<<<< HEAD
         #if os(iOS)
         iOSSpecificView()
 //        #elseif os(macOS)
@@ -17,15 +16,6 @@ struct ContentView: View {
         #else
         Text("Unsupported platform")
         #endif
-=======
-        macOSSpecificView()
-//        #if os(iOS)
-//        iOSSpecificView()
-//        #elseif os(macOS)
-//        #else
-//        Text("Unsupported platform")
-//        #endif
->>>>>>> ml-model
     }
 }
 
