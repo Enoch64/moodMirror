@@ -11,8 +11,8 @@ struct ContentView: View {
     var body: some View {
         #if os(macOS)
         macOSSpecificView()
-        #elseif os(iOS)
-        iOSSpecificView()
+//        #elseif os(iOS)
+//        iOSSpecificView()
         #else
         Text("Unsupported platform")
         #endif

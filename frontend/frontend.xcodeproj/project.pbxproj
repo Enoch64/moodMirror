@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6DCF3DDB2D3CF3BF00850E16 /* AIAEC in Frameworks */ = {isa = PBXBuildFile; productRef = 6DCF3DDA2D3CF3BF00850E16 /* AIAEC */; };
-		6DCF3DDD2D3CF3BF00850E16 /* AIAECLL in Frameworks */ = {isa = PBXBuildFile; productRef = 6DCF3DDC2D3CF3BF00850E16 /* AIAECLL */; };
-		6DCF3DDF2D3CF3BF00850E16 /* AINS in Frameworks */ = {isa = PBXBuildFile; productRef = 6DCF3DDE2D3CF3BF00850E16 /* AINS */; };
-		6DCF3DE12D3CF3BF00850E16 /* AINSLL in Frameworks */ = {isa = PBXBuildFile; productRef = 6DCF3DE02D3CF3BF00850E16 /* AINSLL */; };
-		6DCF3DE32D3CF3BF00850E16 /* AudioBeauty in Frameworks */ = {isa = PBXBuildFile; productRef = 6DCF3DE22D3CF3BF00850E16 /* AudioBeauty */; };
-		6DCF3DE52D3CF3BF00850E16 /* ClearVision in Frameworks */ = {isa = PBXBuildFile; productRef = 6DCF3DE42D3CF3BF00850E16 /* ClearVision */; };
-		6DCF3DE72D3CF3BF00850E16 /* ContentInspect in Frameworks */ = {isa = PBXBuildFile; productRef = 6DCF3DE62D3CF3BF00850E16 /* ContentInspect */; };
-		6DCF3DE92D3CF3BF00850E16 /* FaceCapture in Frameworks */ = {isa = PBXBuildFile; productRef = 6DCF3DE82D3CF3BF00850E16 /* FaceCapture */; };
-		6DCF3DEB2D3CF3BF00850E16 /* FaceDetection in Frameworks */ = {isa = PBXBuildFile; productRef = 6DCF3DEA2D3CF3BF00850E16 /* FaceDetection */; };
-		6DCF3DED2D3CF3BF00850E16 /* LipSync in Frameworks */ = {isa = PBXBuildFile; productRef = 6DCF3DEC2D3CF3BF00850E16 /* LipSync */; };
-		6DCF3DEF2D3CF3BF00850E16 /* ReplayKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6DCF3DEE2D3CF3BF00850E16 /* ReplayKit */; };
-		6DCF3DF12D3CF3BF00850E16 /* RtcBasic in Frameworks */ = {isa = PBXBuildFile; productRef = 6DCF3DF02D3CF3BF00850E16 /* RtcBasic */; };
-		6DCF3DF32D3CF3BF00850E16 /* SpatialAudio in Frameworks */ = {isa = PBXBuildFile; productRef = 6DCF3DF22D3CF3BF00850E16 /* SpatialAudio */; };
-		6DCF3DF52D3CF3BF00850E16 /* VQA in Frameworks */ = {isa = PBXBuildFile; productRef = 6DCF3DF42D3CF3BF00850E16 /* VQA */; };
-		6DCF3DF72D3CF3BF00850E16 /* VideoAv1CodecDec in Frameworks */ = {isa = PBXBuildFile; productRef = 6DCF3DF62D3CF3BF00850E16 /* VideoAv1CodecDec */; };
-		6DCF3DF92D3CF3BF00850E16 /* VideoAv1CodecEnc in Frameworks */ = {isa = PBXBuildFile; productRef = 6DCF3DF82D3CF3BF00850E16 /* VideoAv1CodecEnc */; };
-		6DCF3DFB2D3CF3BF00850E16 /* VideoCodecDec in Frameworks */ = {isa = PBXBuildFile; productRef = 6DCF3DFA2D3CF3BF00850E16 /* VideoCodecDec */; };
-		6DCF3DFD2D3CF3BF00850E16 /* VideoCodecEnc in Frameworks */ = {isa = PBXBuildFile; productRef = 6DCF3DFC2D3CF3BF00850E16 /* VideoCodecEnc */; };
-		6DCF3DFF2D3CF3BF00850E16 /* VirtualBackground in Frameworks */ = {isa = PBXBuildFile; productRef = 6DCF3DFE2D3CF3BF00850E16 /* VirtualBackground */; };
+		C0BFCD7B2D3D8AEB00274B7D /* AIAEC in Frameworks */ = {isa = PBXBuildFile; productRef = C0BFCD7A2D3D8AEB00274B7D /* AIAEC */; };
+		C0BFCD7D2D3D8AEB00274B7D /* AIAECLL in Frameworks */ = {isa = PBXBuildFile; productRef = C0BFCD7C2D3D8AEB00274B7D /* AIAECLL */; };
+		C0BFCD7F2D3D8AEB00274B7D /* AINS in Frameworks */ = {isa = PBXBuildFile; productRef = C0BFCD7E2D3D8AEB00274B7D /* AINS */; };
+		C0BFCD812D3D8AEB00274B7D /* AINSLL in Frameworks */ = {isa = PBXBuildFile; productRef = C0BFCD802D3D8AEB00274B7D /* AINSLL */; };
+		C0BFCD832D3D8AEB00274B7D /* AudioBeauty in Frameworks */ = {isa = PBXBuildFile; productRef = C0BFCD822D3D8AEB00274B7D /* AudioBeauty */; };
+		C0BFCD852D3D8AEB00274B7D /* ClearVision in Frameworks */ = {isa = PBXBuildFile; productRef = C0BFCD842D3D8AEB00274B7D /* ClearVision */; };
+		C0BFCD872D3D8AEB00274B7D /* ContentInspect in Frameworks */ = {isa = PBXBuildFile; productRef = C0BFCD862D3D8AEB00274B7D /* ContentInspect */; };
+		C0BFCD892D3D8AEB00274B7D /* FaceCapture in Frameworks */ = {isa = PBXBuildFile; productRef = C0BFCD882D3D8AEB00274B7D /* FaceCapture */; };
+		C0BFCD8B2D3D8AEB00274B7D /* FaceDetection in Frameworks */ = {isa = PBXBuildFile; productRef = C0BFCD8A2D3D8AEB00274B7D /* FaceDetection */; };
+		C0BFCD8D2D3D8AEB00274B7D /* LipSync in Frameworks */ = {isa = PBXBuildFile; productRef = C0BFCD8C2D3D8AEB00274B7D /* LipSync */; };
+		C0BFCD8F2D3D8AEB00274B7D /* RtcBasic in Frameworks */ = {isa = PBXBuildFile; productRef = C0BFCD8E2D3D8AEB00274B7D /* RtcBasic */; };
+		C0BFCD912D3D8AEB00274B7D /* ScreenCapture in Frameworks */ = {isa = PBXBuildFile; productRef = C0BFCD902D3D8AEB00274B7D /* ScreenCapture */; };
+		C0BFCD932D3D8AEB00274B7D /* SpatialAudio in Frameworks */ = {isa = PBXBuildFile; productRef = C0BFCD922D3D8AEB00274B7D /* SpatialAudio */; };
+		C0BFCD952D3D8AEB00274B7D /* VQA in Frameworks */ = {isa = PBXBuildFile; productRef = C0BFCD942D3D8AEB00274B7D /* VQA */; };
+		C0BFCD972D3D8AEB00274B7D /* VideoAv1CodecDec in Frameworks */ = {isa = PBXBuildFile; productRef = C0BFCD962D3D8AEB00274B7D /* VideoAv1CodecDec */; };
+		C0BFCD992D3D8AEB00274B7D /* VideoAv1CodecEnc in Frameworks */ = {isa = PBXBuildFile; productRef = C0BFCD982D3D8AEB00274B7D /* VideoAv1CodecEnc */; };
+		C0BFCD9B2D3D8AEB00274B7D /* VideoCodecDec in Frameworks */ = {isa = PBXBuildFile; productRef = C0BFCD9A2D3D8AEB00274B7D /* VideoCodecDec */; };
+		C0BFCD9D2D3D8AEB00274B7D /* VideoCodecEnc in Frameworks */ = {isa = PBXBuildFile; productRef = C0BFCD9C2D3D8AEB00274B7D /* VideoCodecEnc */; };
+		C0BFCD9F2D3D8AEB00274B7D /* VirtualBackground in Frameworks */ = {isa = PBXBuildFile; productRef = C0BFCD9E2D3D8AEB00274B7D /* VirtualBackground */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,25 +77,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DCF3DFD2D3CF3BF00850E16 /* VideoCodecEnc in Frameworks */,
-				6DCF3DEF2D3CF3BF00850E16 /* ReplayKit in Frameworks */,
-				6DCF3DE52D3CF3BF00850E16 /* ClearVision in Frameworks */,
-				6DCF3DDD2D3CF3BF00850E16 /* AIAECLL in Frameworks */,
-				6DCF3DF92D3CF3BF00850E16 /* VideoAv1CodecEnc in Frameworks */,
-				6DCF3DF32D3CF3BF00850E16 /* SpatialAudio in Frameworks */,
-				6DCF3DE72D3CF3BF00850E16 /* ContentInspect in Frameworks */,
-				6DCF3DF52D3CF3BF00850E16 /* VQA in Frameworks */,
-				6DCF3DEB2D3CF3BF00850E16 /* FaceDetection in Frameworks */,
-				6DCF3DE12D3CF3BF00850E16 /* AINSLL in Frameworks */,
-				6DCF3DF72D3CF3BF00850E16 /* VideoAv1CodecDec in Frameworks */,
-				6DCF3DDB2D3CF3BF00850E16 /* AIAEC in Frameworks */,
-				6DCF3DFB2D3CF3BF00850E16 /* VideoCodecDec in Frameworks */,
-				6DCF3DE32D3CF3BF00850E16 /* AudioBeauty in Frameworks */,
-				6DCF3DFF2D3CF3BF00850E16 /* VirtualBackground in Frameworks */,
-				6DCF3DED2D3CF3BF00850E16 /* LipSync in Frameworks */,
-				6DCF3DE92D3CF3BF00850E16 /* FaceCapture in Frameworks */,
-				6DCF3DDF2D3CF3BF00850E16 /* AINS in Frameworks */,
-				6DCF3DF12D3CF3BF00850E16 /* RtcBasic in Frameworks */,
+				C0BFCD9D2D3D8AEB00274B7D /* VideoCodecEnc in Frameworks */,
+				C0BFCD852D3D8AEB00274B7D /* ClearVision in Frameworks */,
+				C0BFCD7D2D3D8AEB00274B7D /* AIAECLL in Frameworks */,
+				C0BFCD872D3D8AEB00274B7D /* ContentInspect in Frameworks */,
+				C0BFCD992D3D8AEB00274B7D /* VideoAv1CodecEnc in Frameworks */,
+				C0BFCD932D3D8AEB00274B7D /* SpatialAudio in Frameworks */,
+				C0BFCD8B2D3D8AEB00274B7D /* FaceDetection in Frameworks */,
+				C0BFCD952D3D8AEB00274B7D /* VQA in Frameworks */,
+				C0BFCD812D3D8AEB00274B7D /* AINSLL in Frameworks */,
+				C0BFCD8F2D3D8AEB00274B7D /* RtcBasic in Frameworks */,
+				C0BFCD972D3D8AEB00274B7D /* VideoAv1CodecDec in Frameworks */,
+				C0BFCD7B2D3D8AEB00274B7D /* AIAEC in Frameworks */,
+				C0BFCD9B2D3D8AEB00274B7D /* VideoCodecDec in Frameworks */,
+				C0BFCD832D3D8AEB00274B7D /* AudioBeauty in Frameworks */,
+				C0BFCD9F2D3D8AEB00274B7D /* VirtualBackground in Frameworks */,
+				C0BFCD8D2D3D8AEB00274B7D /* LipSync in Frameworks */,
+				C0BFCD912D3D8AEB00274B7D /* ScreenCapture in Frameworks */,
+				C0BFCD892D3D8AEB00274B7D /* FaceCapture in Frameworks */,
+				C0BFCD7F2D3D8AEB00274B7D /* AINS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,25 +154,25 @@
 			);
 			name = frontend;
 			packageProductDependencies = (
-				6DCF3DDA2D3CF3BF00850E16 /* AIAEC */,
-				6DCF3DDC2D3CF3BF00850E16 /* AIAECLL */,
-				6DCF3DDE2D3CF3BF00850E16 /* AINS */,
-				6DCF3DE02D3CF3BF00850E16 /* AINSLL */,
-				6DCF3DE22D3CF3BF00850E16 /* AudioBeauty */,
-				6DCF3DE42D3CF3BF00850E16 /* ClearVision */,
-				6DCF3DE62D3CF3BF00850E16 /* ContentInspect */,
-				6DCF3DE82D3CF3BF00850E16 /* FaceCapture */,
-				6DCF3DEA2D3CF3BF00850E16 /* FaceDetection */,
-				6DCF3DEC2D3CF3BF00850E16 /* LipSync */,
-				6DCF3DEE2D3CF3BF00850E16 /* ReplayKit */,
-				6DCF3DF02D3CF3BF00850E16 /* RtcBasic */,
-				6DCF3DF22D3CF3BF00850E16 /* SpatialAudio */,
-				6DCF3DF42D3CF3BF00850E16 /* VQA */,
-				6DCF3DF62D3CF3BF00850E16 /* VideoAv1CodecDec */,
-				6DCF3DF82D3CF3BF00850E16 /* VideoAv1CodecEnc */,
-				6DCF3DFA2D3CF3BF00850E16 /* VideoCodecDec */,
-				6DCF3DFC2D3CF3BF00850E16 /* VideoCodecEnc */,
-				6DCF3DFE2D3CF3BF00850E16 /* VirtualBackground */,
+				C0BFCD7A2D3D8AEB00274B7D /* AIAEC */,
+				C0BFCD7C2D3D8AEB00274B7D /* AIAECLL */,
+				C0BFCD7E2D3D8AEB00274B7D /* AINS */,
+				C0BFCD802D3D8AEB00274B7D /* AINSLL */,
+				C0BFCD822D3D8AEB00274B7D /* AudioBeauty */,
+				C0BFCD842D3D8AEB00274B7D /* ClearVision */,
+				C0BFCD862D3D8AEB00274B7D /* ContentInspect */,
+				C0BFCD882D3D8AEB00274B7D /* FaceCapture */,
+				C0BFCD8A2D3D8AEB00274B7D /* FaceDetection */,
+				C0BFCD8C2D3D8AEB00274B7D /* LipSync */,
+				C0BFCD8E2D3D8AEB00274B7D /* RtcBasic */,
+				C0BFCD902D3D8AEB00274B7D /* ScreenCapture */,
+				C0BFCD922D3D8AEB00274B7D /* SpatialAudio */,
+				C0BFCD942D3D8AEB00274B7D /* VQA */,
+				C0BFCD962D3D8AEB00274B7D /* VideoAv1CodecDec */,
+				C0BFCD982D3D8AEB00274B7D /* VideoAv1CodecEnc */,
+				C0BFCD9A2D3D8AEB00274B7D /* VideoCodecDec */,
+				C0BFCD9C2D3D8AEB00274B7D /* VideoCodecEnc */,
+				C0BFCD9E2D3D8AEB00274B7D /* VirtualBackground */,
 			);
 			productName = frontend;
 			productReference = C0A2F4D72D3C70B800013474 /* frontend.app */;
@@ -251,7 +251,7 @@
 			mainGroup = C0A2F4CE2D3C70B800013474;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				6DCF3DD92D3CF3BF00850E16 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */,
+				C0BFCD792D3D8AEB00274B7D /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C0A2F4D82D3C70B800013474 /* Products */;
@@ -450,7 +450,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"frontend/Preview Content\"";
-				DEVELOPMENT_TEAM = RZNN7MUXZF;
+				DEVELOPMENT_TEAM = GZUM929GH3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = frontend/Info.plist;
@@ -491,7 +491,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"frontend/Preview Content\"";
-				DEVELOPMENT_TEAM = RZNN7MUXZF;
+				DEVELOPMENT_TEAM = GZUM929GH3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = frontend/Info.plist;
@@ -651,9 +651,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6DCF3DD92D3CF3BF00850E16 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */ = {
+		C0BFCD792D3D8AEB00274B7D /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AgoraIO/AgoraRtcEngine_iOS.git";
+			repositoryURL = "https://github.com/AgoraIO/AgoraRtcEngine_macOS.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 4.5.0;
@@ -662,99 +662,99 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6DCF3DDA2D3CF3BF00850E16 /* AIAEC */ = {
+		C0BFCD7A2D3D8AEB00274B7D /* AIAEC */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6DCF3DD92D3CF3BF00850E16 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = C0BFCD792D3D8AEB00274B7D /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
 			productName = AIAEC;
 		};
-		6DCF3DDC2D3CF3BF00850E16 /* AIAECLL */ = {
+		C0BFCD7C2D3D8AEB00274B7D /* AIAECLL */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6DCF3DD92D3CF3BF00850E16 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = C0BFCD792D3D8AEB00274B7D /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
 			productName = AIAECLL;
 		};
-		6DCF3DDE2D3CF3BF00850E16 /* AINS */ = {
+		C0BFCD7E2D3D8AEB00274B7D /* AINS */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6DCF3DD92D3CF3BF00850E16 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = C0BFCD792D3D8AEB00274B7D /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
 			productName = AINS;
 		};
-		6DCF3DE02D3CF3BF00850E16 /* AINSLL */ = {
+		C0BFCD802D3D8AEB00274B7D /* AINSLL */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6DCF3DD92D3CF3BF00850E16 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = C0BFCD792D3D8AEB00274B7D /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
 			productName = AINSLL;
 		};
-		6DCF3DE22D3CF3BF00850E16 /* AudioBeauty */ = {
+		C0BFCD822D3D8AEB00274B7D /* AudioBeauty */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6DCF3DD92D3CF3BF00850E16 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = C0BFCD792D3D8AEB00274B7D /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
 			productName = AudioBeauty;
 		};
-		6DCF3DE42D3CF3BF00850E16 /* ClearVision */ = {
+		C0BFCD842D3D8AEB00274B7D /* ClearVision */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6DCF3DD92D3CF3BF00850E16 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = C0BFCD792D3D8AEB00274B7D /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
 			productName = ClearVision;
 		};
-		6DCF3DE62D3CF3BF00850E16 /* ContentInspect */ = {
+		C0BFCD862D3D8AEB00274B7D /* ContentInspect */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6DCF3DD92D3CF3BF00850E16 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = C0BFCD792D3D8AEB00274B7D /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
 			productName = ContentInspect;
 		};
-		6DCF3DE82D3CF3BF00850E16 /* FaceCapture */ = {
+		C0BFCD882D3D8AEB00274B7D /* FaceCapture */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6DCF3DD92D3CF3BF00850E16 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = C0BFCD792D3D8AEB00274B7D /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
 			productName = FaceCapture;
 		};
-		6DCF3DEA2D3CF3BF00850E16 /* FaceDetection */ = {
+		C0BFCD8A2D3D8AEB00274B7D /* FaceDetection */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6DCF3DD92D3CF3BF00850E16 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = C0BFCD792D3D8AEB00274B7D /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
 			productName = FaceDetection;
 		};
-		6DCF3DEC2D3CF3BF00850E16 /* LipSync */ = {
+		C0BFCD8C2D3D8AEB00274B7D /* LipSync */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6DCF3DD92D3CF3BF00850E16 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = C0BFCD792D3D8AEB00274B7D /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
 			productName = LipSync;
 		};
-		6DCF3DEE2D3CF3BF00850E16 /* ReplayKit */ = {
+		C0BFCD8E2D3D8AEB00274B7D /* RtcBasic */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6DCF3DD92D3CF3BF00850E16 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
-			productName = ReplayKit;
-		};
-		6DCF3DF02D3CF3BF00850E16 /* RtcBasic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6DCF3DD92D3CF3BF00850E16 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = C0BFCD792D3D8AEB00274B7D /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
 			productName = RtcBasic;
 		};
-		6DCF3DF22D3CF3BF00850E16 /* SpatialAudio */ = {
+		C0BFCD902D3D8AEB00274B7D /* ScreenCapture */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6DCF3DD92D3CF3BF00850E16 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = C0BFCD792D3D8AEB00274B7D /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
+			productName = ScreenCapture;
+		};
+		C0BFCD922D3D8AEB00274B7D /* SpatialAudio */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0BFCD792D3D8AEB00274B7D /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
 			productName = SpatialAudio;
 		};
-		6DCF3DF42D3CF3BF00850E16 /* VQA */ = {
+		C0BFCD942D3D8AEB00274B7D /* VQA */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6DCF3DD92D3CF3BF00850E16 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = C0BFCD792D3D8AEB00274B7D /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
 			productName = VQA;
 		};
-		6DCF3DF62D3CF3BF00850E16 /* VideoAv1CodecDec */ = {
+		C0BFCD962D3D8AEB00274B7D /* VideoAv1CodecDec */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6DCF3DD92D3CF3BF00850E16 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = C0BFCD792D3D8AEB00274B7D /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
 			productName = VideoAv1CodecDec;
 		};
-		6DCF3DF82D3CF3BF00850E16 /* VideoAv1CodecEnc */ = {
+		C0BFCD982D3D8AEB00274B7D /* VideoAv1CodecEnc */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6DCF3DD92D3CF3BF00850E16 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = C0BFCD792D3D8AEB00274B7D /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
 			productName = VideoAv1CodecEnc;
 		};
-		6DCF3DFA2D3CF3BF00850E16 /* VideoCodecDec */ = {
+		C0BFCD9A2D3D8AEB00274B7D /* VideoCodecDec */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6DCF3DD92D3CF3BF00850E16 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = C0BFCD792D3D8AEB00274B7D /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
 			productName = VideoCodecDec;
 		};
-		6DCF3DFC2D3CF3BF00850E16 /* VideoCodecEnc */ = {
+		C0BFCD9C2D3D8AEB00274B7D /* VideoCodecEnc */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6DCF3DD92D3CF3BF00850E16 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = C0BFCD792D3D8AEB00274B7D /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
 			productName = VideoCodecEnc;
 		};
-		6DCF3DFE2D3CF3BF00850E16 /* VirtualBackground */ = {
+		C0BFCD9E2D3D8AEB00274B7D /* VirtualBackground */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6DCF3DD92D3CF3BF00850E16 /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			package = C0BFCD792D3D8AEB00274B7D /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
 			productName = VirtualBackground;
 		};
 /* End XCSwiftPackageProductDependency section */
