@@ -9,14 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        #if os(iOS)
+        iOSSpecificView()
+        #elseif os(macOS)
+        macOSSpecificView()
+        #else
+        Text("Unsupported platform")
+        #endif
     }
+}
+
+#Preview {
+    ContentView()
 }
 
 #Preview {
