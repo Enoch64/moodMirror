@@ -51,7 +51,7 @@ class ViewController: NSViewController {
            responseLabel.font = NSFont.systemFont(ofSize: 20)
            responseLabel.textColor = NSColor.white
            responseLabel.frame = CGRect(x: 250, y: 20, width: 600, height: 40)
-           self.view.addSubview(responseLabel) 
+           self.view.addSubview(responseLabel)
 
         if let appId = ProcessInfo.processInfo.environment["APP_ID"] {
             print(appId)
@@ -143,7 +143,7 @@ class ViewController: NSViewController {
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/octet-stream", forHTTPHeaderField: "Content-Type")
-
+        request.setValue("macOS", forHTTPHeaderField: "platform")
         let task = URLSession.shared.uploadTask(with: request, from: data) { responseData, response, error in
             if let error = error {
                 DispatchQueue.main.async {
