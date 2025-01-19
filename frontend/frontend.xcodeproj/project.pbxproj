@@ -6,6 +6,28 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C03F027F2D3CC4E2009910EB /* AIAEC in Frameworks */ = {isa = PBXBuildFile; productRef = C03F027E2D3CC4E2009910EB /* AIAEC */; };
+		C03F02812D3CC4E2009910EB /* AIAECLL in Frameworks */ = {isa = PBXBuildFile; productRef = C03F02802D3CC4E2009910EB /* AIAECLL */; };
+		C03F02832D3CC4E2009910EB /* AINS in Frameworks */ = {isa = PBXBuildFile; productRef = C03F02822D3CC4E2009910EB /* AINS */; };
+		C03F02852D3CC4E2009910EB /* AINSLL in Frameworks */ = {isa = PBXBuildFile; productRef = C03F02842D3CC4E2009910EB /* AINSLL */; };
+		C03F02872D3CC4E2009910EB /* AudioBeauty in Frameworks */ = {isa = PBXBuildFile; productRef = C03F02862D3CC4E2009910EB /* AudioBeauty */; };
+		C03F02892D3CC4E2009910EB /* ClearVision in Frameworks */ = {isa = PBXBuildFile; productRef = C03F02882D3CC4E2009910EB /* ClearVision */; };
+		C03F028B2D3CC4E2009910EB /* ContentInspect in Frameworks */ = {isa = PBXBuildFile; productRef = C03F028A2D3CC4E2009910EB /* ContentInspect */; };
+		C03F028D2D3CC4E2009910EB /* FaceCapture in Frameworks */ = {isa = PBXBuildFile; productRef = C03F028C2D3CC4E2009910EB /* FaceCapture */; };
+		C03F028F2D3CC4E2009910EB /* FaceDetection in Frameworks */ = {isa = PBXBuildFile; productRef = C03F028E2D3CC4E2009910EB /* FaceDetection */; };
+		C03F02912D3CC4E2009910EB /* LipSync in Frameworks */ = {isa = PBXBuildFile; productRef = C03F02902D3CC4E2009910EB /* LipSync */; };
+		C03F02932D3CC4E2009910EB /* RtcBasic in Frameworks */ = {isa = PBXBuildFile; productRef = C03F02922D3CC4E2009910EB /* RtcBasic */; };
+		C03F02952D3CC4E2009910EB /* ScreenCapture in Frameworks */ = {isa = PBXBuildFile; productRef = C03F02942D3CC4E2009910EB /* ScreenCapture */; };
+		C03F02972D3CC4E2009910EB /* SpatialAudio in Frameworks */ = {isa = PBXBuildFile; productRef = C03F02962D3CC4E2009910EB /* SpatialAudio */; };
+		C03F02992D3CC4E2009910EB /* VQA in Frameworks */ = {isa = PBXBuildFile; productRef = C03F02982D3CC4E2009910EB /* VQA */; };
+		C03F029B2D3CC4E2009910EB /* VideoAv1CodecDec in Frameworks */ = {isa = PBXBuildFile; productRef = C03F029A2D3CC4E2009910EB /* VideoAv1CodecDec */; };
+		C03F029D2D3CC4E2009910EB /* VideoAv1CodecEnc in Frameworks */ = {isa = PBXBuildFile; productRef = C03F029C2D3CC4E2009910EB /* VideoAv1CodecEnc */; };
+		C03F029F2D3CC4E2009910EB /* VideoCodecDec in Frameworks */ = {isa = PBXBuildFile; productRef = C03F029E2D3CC4E2009910EB /* VideoCodecDec */; };
+		C03F02A12D3CC4E2009910EB /* VideoCodecEnc in Frameworks */ = {isa = PBXBuildFile; productRef = C03F02A02D3CC4E2009910EB /* VideoCodecEnc */; };
+		C03F02A32D3CC4E2009910EB /* VirtualBackground in Frameworks */ = {isa = PBXBuildFile; productRef = C03F02A22D3CC4E2009910EB /* VirtualBackground */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C0A2F4E92D3C70BA00013474 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -47,6 +69,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C03F02A12D3CC4E2009910EB /* VideoCodecEnc in Frameworks */,
+				C03F02892D3CC4E2009910EB /* ClearVision in Frameworks */,
+				C03F02812D3CC4E2009910EB /* AIAECLL in Frameworks */,
+				C03F028B2D3CC4E2009910EB /* ContentInspect in Frameworks */,
+				C03F029D2D3CC4E2009910EB /* VideoAv1CodecEnc in Frameworks */,
+				C03F02972D3CC4E2009910EB /* SpatialAudio in Frameworks */,
+				C03F028F2D3CC4E2009910EB /* FaceDetection in Frameworks */,
+				C03F02992D3CC4E2009910EB /* VQA in Frameworks */,
+				C03F02852D3CC4E2009910EB /* AINSLL in Frameworks */,
+				C03F02932D3CC4E2009910EB /* RtcBasic in Frameworks */,
+				C03F029B2D3CC4E2009910EB /* VideoAv1CodecDec in Frameworks */,
+				C03F027F2D3CC4E2009910EB /* AIAEC in Frameworks */,
+				C03F029F2D3CC4E2009910EB /* VideoCodecDec in Frameworks */,
+				C03F02872D3CC4E2009910EB /* AudioBeauty in Frameworks */,
+				C03F02A32D3CC4E2009910EB /* VirtualBackground in Frameworks */,
+				C03F02912D3CC4E2009910EB /* LipSync in Frameworks */,
+				C03F02952D3CC4E2009910EB /* ScreenCapture in Frameworks */,
+				C03F028D2D3CC4E2009910EB /* FaceCapture in Frameworks */,
+				C03F02832D3CC4E2009910EB /* AINS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +148,25 @@
 			);
 			name = frontend;
 			packageProductDependencies = (
+				C03F027E2D3CC4E2009910EB /* AIAEC */,
+				C03F02802D3CC4E2009910EB /* AIAECLL */,
+				C03F02822D3CC4E2009910EB /* AINS */,
+				C03F02842D3CC4E2009910EB /* AINSLL */,
+				C03F02862D3CC4E2009910EB /* AudioBeauty */,
+				C03F02882D3CC4E2009910EB /* ClearVision */,
+				C03F028A2D3CC4E2009910EB /* ContentInspect */,
+				C03F028C2D3CC4E2009910EB /* FaceCapture */,
+				C03F028E2D3CC4E2009910EB /* FaceDetection */,
+				C03F02902D3CC4E2009910EB /* LipSync */,
+				C03F02922D3CC4E2009910EB /* RtcBasic */,
+				C03F02942D3CC4E2009910EB /* ScreenCapture */,
+				C03F02962D3CC4E2009910EB /* SpatialAudio */,
+				C03F02982D3CC4E2009910EB /* VQA */,
+				C03F029A2D3CC4E2009910EB /* VideoAv1CodecDec */,
+				C03F029C2D3CC4E2009910EB /* VideoAv1CodecEnc */,
+				C03F029E2D3CC4E2009910EB /* VideoCodecDec */,
+				C03F02A02D3CC4E2009910EB /* VideoCodecEnc */,
+				C03F02A22D3CC4E2009910EB /* VirtualBackground */,
 			);
 			productName = frontend;
 			productReference = C0A2F4D72D3C70B800013474 /* frontend.app */;
@@ -184,6 +244,9 @@
 			);
 			mainGroup = C0A2F4CE2D3C70B800013474;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C03F027D2D3CC4E2009910EB /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C0A2F4D82D3C70B800013474 /* Products */;
 			projectDirPath = "";
@@ -378,6 +441,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = frontend/frontend.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"frontend/Preview Content\"";
@@ -385,6 +449,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) requires access to your camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "$(PRODUCT_NAME) requires access to your microphone ";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -417,6 +482,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = frontend/frontend.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"frontend/Preview Content\"";
@@ -424,6 +490,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) requires access to your camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "$(PRODUCT_NAME) requires access to your microphone ";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -576,6 +643,115 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C03F027D2D3CC4E2009910EB /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AgoraIO/AgoraRtcEngine_macOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C03F027E2D3CC4E2009910EB /* AIAEC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C03F027D2D3CC4E2009910EB /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
+			productName = AIAEC;
+		};
+		C03F02802D3CC4E2009910EB /* AIAECLL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C03F027D2D3CC4E2009910EB /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
+			productName = AIAECLL;
+		};
+		C03F02822D3CC4E2009910EB /* AINS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C03F027D2D3CC4E2009910EB /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
+			productName = AINS;
+		};
+		C03F02842D3CC4E2009910EB /* AINSLL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C03F027D2D3CC4E2009910EB /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
+			productName = AINSLL;
+		};
+		C03F02862D3CC4E2009910EB /* AudioBeauty */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C03F027D2D3CC4E2009910EB /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
+			productName = AudioBeauty;
+		};
+		C03F02882D3CC4E2009910EB /* ClearVision */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C03F027D2D3CC4E2009910EB /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
+			productName = ClearVision;
+		};
+		C03F028A2D3CC4E2009910EB /* ContentInspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C03F027D2D3CC4E2009910EB /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
+			productName = ContentInspect;
+		};
+		C03F028C2D3CC4E2009910EB /* FaceCapture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C03F027D2D3CC4E2009910EB /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
+			productName = FaceCapture;
+		};
+		C03F028E2D3CC4E2009910EB /* FaceDetection */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C03F027D2D3CC4E2009910EB /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
+			productName = FaceDetection;
+		};
+		C03F02902D3CC4E2009910EB /* LipSync */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C03F027D2D3CC4E2009910EB /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
+			productName = LipSync;
+		};
+		C03F02922D3CC4E2009910EB /* RtcBasic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C03F027D2D3CC4E2009910EB /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
+			productName = RtcBasic;
+		};
+		C03F02942D3CC4E2009910EB /* ScreenCapture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C03F027D2D3CC4E2009910EB /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
+			productName = ScreenCapture;
+		};
+		C03F02962D3CC4E2009910EB /* SpatialAudio */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C03F027D2D3CC4E2009910EB /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
+			productName = SpatialAudio;
+		};
+		C03F02982D3CC4E2009910EB /* VQA */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C03F027D2D3CC4E2009910EB /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
+			productName = VQA;
+		};
+		C03F029A2D3CC4E2009910EB /* VideoAv1CodecDec */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C03F027D2D3CC4E2009910EB /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
+			productName = VideoAv1CodecDec;
+		};
+		C03F029C2D3CC4E2009910EB /* VideoAv1CodecEnc */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C03F027D2D3CC4E2009910EB /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
+			productName = VideoAv1CodecEnc;
+		};
+		C03F029E2D3CC4E2009910EB /* VideoCodecDec */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C03F027D2D3CC4E2009910EB /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
+			productName = VideoCodecDec;
+		};
+		C03F02A02D3CC4E2009910EB /* VideoCodecEnc */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C03F027D2D3CC4E2009910EB /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
+			productName = VideoCodecEnc;
+		};
+		C03F02A22D3CC4E2009910EB /* VirtualBackground */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C03F027D2D3CC4E2009910EB /* XCRemoteSwiftPackageReference "AgoraRtcEngine_macOS" */;
+			productName = VirtualBackground;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C0A2F4CF2D3C70B800013474 /* Project object */;
 }
