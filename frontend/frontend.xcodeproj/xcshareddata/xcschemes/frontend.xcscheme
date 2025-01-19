@@ -76,11 +76,14 @@
       </BuildableProductRunnable>
       <EnvironmentVariables>
          <EnvironmentVariable
+<<<<<<< HEAD
             key = "TEMP_TOKEN"
             value = "007eJxTYHil/+bYu7avc75L6qjvPOX4LahvxhXH8yk68RqzxLvf8U1TYEgzTkxOMU9KS7QwMDYxNE2yMDA1NUhKMzAxNkhLMTFMimrtSW8IZGQQ2e7EwsgAgSA+G0NuYrJ/sCEDAwAn9CDe"
             isEnabled = "YES">
          </EnvironmentVariable>
          <EnvironmentVariable
+=======
+>>>>>>> 58a15bae2f03ef7707ce3eb4cee9fd9f270d1410
             key = "APP_ID"
             value = "f3acd7bfa803415b80550bf0430fd41b"
             isEnabled = "YES">
@@ -91,6 +94,14 @@
             isEnabled = "YES">
          </EnvironmentVariable>
          <EnvironmentVariable
+<<<<<<< HEAD
+=======
+            key = "TEMP_TOKEN"
+            value = "007eJxTYHil/+bYu7avc75L6qjvPOX4LahvxhXH8yk68RqzxLvf8U1TYEgzTkxOMU9KS7QwMDYxNE2yMDA1NUhKMzAxNkhLMTFMimrtSW8IZGQQ2e7EwsgAgSA+G0NuYrJ/sCEDAwAn9CDe"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+>>>>>>> 58a15bae2f03ef7707ce3eb4cee9fd9f270d1410
             key = "CHANNEL_NAME"
             value = "macOS1"
             isEnabled = "YES">

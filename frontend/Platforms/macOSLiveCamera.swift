@@ -98,16 +98,16 @@ struct LiveCameraScreen: View {
                 Spacer()
                 VStack {
                     WebcamView(socketManager: socketManager)
-                        .frame(width: 640, height: 480)
+                        .frame(width: 640, height: 300)
                     if let image = capture {
                         Image(nsImage: image)
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 640, height: 480)
+                            .frame(width: 640, height: 300)
                             .cornerRadius(5)
                     } else {
                         Color.clear
-                            .frame(width: 640, height: 480)
+                            .frame(width: 640, height: 300)
                             .cornerRadius(5)
                     }
                 }

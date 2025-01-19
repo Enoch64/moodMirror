@@ -24,6 +24,7 @@ struct frontendApp: App {
                     )
                 )
                 .edgesIgnoringSafeArea(.all)
+                .navigationTitle("Mood Mirror")
         }
     }
 }

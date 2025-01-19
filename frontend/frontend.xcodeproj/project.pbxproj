@@ -52,14 +52,22 @@
 		C0A2F4F22D3C70BA00013474 /* frontendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = frontendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		6DE3A4E92D3C7B6E007BA458 /* Platforms */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Platforms;
-			sourceTree = "<group>";
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		6DE3A5042D3CDCB3007BA458 /* Exceptions for "frontend" folder in "frontend" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C0A2F4D62D3C70B800013474 /* frontend */;
 		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
 		C0A2F4D92D3C70B800013474 /* frontend */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6DE3A5042D3CDCB3007BA458 /* Exceptions for "frontend" folder in "frontend" target */,
+			);
 			path = frontend;
 			sourceTree = "<group>";
 		};
@@ -115,7 +123,6 @@
 			children = (
 				C0A2F4D92D3C70B800013474 /* frontend */,
 				C0A2F4D82D3C70B800013474 /* Products */,
-				6DE3A4E92D3C7B6E007BA458 /* Platforms */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,31 +152,10 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				6DE3A4E92D3C7B6E007BA458 /* Platforms */,
 				C0A2F4D92D3C70B800013474 /* frontend */,
 			);
 			name = frontend;
 			packageProductDependencies = (
-				C03F027E2D3CC4E2009910EB /* AIAEC */,
-				C03F02802D3CC4E2009910EB /* AIAECLL */,
-				C03F02822D3CC4E2009910EB /* AINS */,
-				C03F02842D3CC4E2009910EB /* AINSLL */,
-				C03F02862D3CC4E2009910EB /* AudioBeauty */,
-				C03F02882D3CC4E2009910EB /* ClearVision */,
-				C03F028A2D3CC4E2009910EB /* ContentInspect */,
-				C03F028C2D3CC4E2009910EB /* FaceCapture */,
-				C03F028E2D3CC4E2009910EB /* FaceDetection */,
-				C03F02902D3CC4E2009910EB /* LipSync */,
-				C03F02922D3CC4E2009910EB /* RtcBasic */,
-				C03F02942D3CC4E2009910EB /* ScreenCapture */,
-				C03F02962D3CC4E2009910EB /* SpatialAudio */,
-				C03F02982D3CC4E2009910EB /* VQA */,
-				C03F029A2D3CC4E2009910EB /* VideoAv1CodecDec */,
-				C03F029C2D3CC4E2009910EB /* VideoAv1CodecEnc */,
-				C03F029E2D3CC4E2009910EB /* VideoCodecDec */,
-				C03F02A02D3CC4E2009910EB /* VideoCodecEnc */,
-				C03F02A22D3CC4E2009910EB /* VirtualBackground */,
-				C03F02E12D3CF978009910EB /* Kingfisher */,
 			);
 			productName = frontend;
 			productReference = C0A2F4D72D3C70B800013474 /* frontend.app */;
@@ -449,7 +435,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"frontend/Preview Content\"";
-				DEVELOPMENT_TEAM = GZUM929GH3;
+				DEVELOPMENT_TEAM = RZNN7MUXZF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) requires access to your camera";
@@ -490,7 +476,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"frontend/Preview Content\"";
-				DEVELOPMENT_TEAM = GZUM929GH3;
+				DEVELOPMENT_TEAM = RZNN7MUXZF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) requires access to your camera";
