@@ -7,33 +7,48 @@ struct macOSSpecificView: View {
 
     var body: some View {
         NavigationStack {
-                VStack(spacing: 40) {
-                    Text("moodMirror")
-                        .font(.largeTitle)
+            VStack(spacing: 40) {
+                Text("moodMirror")
+                    .font(.system(size:60 , weight: .bold, design: .monospaced))
+                    .foregroundColor(.white)
+                    .padding(.top, 20)
+                    .shadow(radius:5)
+                
+                NavigationLink(destination: LiveCameraScreen()) {
+                    Text("Live Camera Mode")
+                        .font(.system(size: 20))
+                        .padding(15)
+                        .background(
+                            ZStack {
+                                Color.white.opacity(0.2)
+                                Color.white.opacity(0.1)
+                            }
+                            .blur(radius: 10)
+                        )
                         .foregroundColor(.white)
-                        .padding(.top, 20)
-                    
-                    NavigationLink("Live Camera Mode") {
-                        LiveCameraScreen()
-                    }
-                    .font(.system(size: 20))
-                    .foregroundColor(.white)
-                    .background(.black)
-                    .cornerRadius(5)
-                    .padding()
-                    .buttonStyle(.borderedProminent)
-                    
-                    NavigationLink("Live Call Mode") {
-                        CallScreen()
-                    }
-                    .font(.system(size: 20))
-                    .background(.black)
-                    .foregroundColor(.white)
-                    .cornerRadius(5)
-                    .padding()
-                    .buttonStyle(.borderedProminent)
+                        .cornerRadius(15)
+                        .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 5)
                 }
+                .buttonStyle(PlainButtonStyle())
+                
+                NavigationLink(destination: CallScreen()) {
+                    Text("Live Call Mode")
+                        .font(.system(size: 20))
+                        .padding(15)
+                        .background(
+                            ZStack {
+                                Color.white.opacity(0.2)
+                                Color.white.opacity(0.1)
+                            }
+                            .blur(radius: 10)
+                        )
+                        .foregroundColor(.white)
+                        .cornerRadius(15)
+                        .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 5)
+                }
+                .buttonStyle(PlainButtonStyle())
             }
+        }
     }
 
 }

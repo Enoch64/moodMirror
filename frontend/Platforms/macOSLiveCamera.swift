@@ -35,7 +35,6 @@ class VideoSocketManager {
             print("WebSocket is not running.")
         }
 
-        // Start receiving messages from the server after connection
         receiveMessages()
     }
 
@@ -50,14 +49,14 @@ class VideoSocketManager {
                     print("Received string message: \(text)")
                     if text == "Connection established" {
                         print("Successfully connected to WebSocket!")
-                        self.onConnect?()  // Trigger callback for successful connection
+                        self.onConnect?()
                     }
                 case .data(let data):
                     print("Received data message: \(data)")
                 @unknown default:
                     print("Unknown WebSocket message received")
                 }
-                self.receiveMessages()  // Recursively listen for more messages
+                self.receiveMessages()
             }
         }
     }
@@ -105,9 +104,11 @@ struct LiveCameraScreen: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: 640, height: 480)
+                            .cornerRadius(5)
                     } else {
                         Color.clear
                             .frame(width: 640, height: 480)
+                            .cornerRadius(5)
                     }
                 }
                 Spacer()
@@ -186,8 +187,7 @@ struct WebcamView: NSViewRepresentable {
                 let nsImage = NSImage(cgImage: cgImage, size: NSSize(width: cgImage.width, height: cgImage.height))
                 if let imageData = nsImage.tiffRepresentation(using: .jpeg, factor: 0.5) {
                         print("Sending frame")
-                        print(imageData)
-                        socketManager.sendFrame(imageData) // Send captured frame to WebSocket
+                        socketManager.sendFrame(imageData) 
                 }
             }
         }

@@ -23,7 +23,6 @@ class ViewController: NSViewController {
         super.viewDidLayout()
 
         if let screenFrame = NSScreen.main?.frame {
-            // Centering the remote view (not fullscreen)
             let remoteViewWidth: CGFloat = 640
             let remoteViewHeight: CGFloat = 480
             remoteView.frame = CGRect(
@@ -33,17 +32,16 @@ class ViewController: NSViewController {
                 height: remoteViewHeight
             )
             
-            // Local view at top-left with padding from the top
-                    let localViewWidth: CGFloat = 135
-                    let localViewHeight: CGFloat = 240
-                    let topPadding: CGFloat = 40
+                let localViewWidth: CGFloat = 135
+                let localViewHeight: CGFloat = 240
+                let topPadding: CGFloat = 40
 
-                    localView.frame = CGRect(
-                        x: 20,
-                        y: topPadding,
-                        width: localViewWidth,
-                        height: localViewHeight
-                    )
+                localView.frame = CGRect(
+                    x: 20,
+                    y: topPadding,
+                    width: localViewWidth,
+                    height: localViewHeight
+                )
         }
     }
 
@@ -98,17 +96,14 @@ class ViewController: NSViewController {
            let cId = ProcessInfo.processInfo.environment["CHANNEL_NAME"],
            !cId.isEmpty,
            !token.isEmpty {
-            print("THE TOKEN AND STUFF IS RENDERED")
-            print(token, cId)
             agoraKit.joinChannel(byToken: token, channelId: cId, uid: 0, mediaOptions: options)
         }else {
-            print("JOIN CHANNEL FAILED")
+            print("Join Channel FailedD")
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Loading the view")
         initView()
         agoraKit.enableVideo()
         startPreview()
@@ -124,18 +119,16 @@ class ViewController: NSViewController {
 
     
     func startVideoCallButtonPressed() {
-        print("Button Pressed")
-        initView()  // Initialize local & remote views and Agora engine
+        initView()
         
         guard agoraKit != nil else {
-            // Handle case where Agora engine is not initialized
             print("Error: Agora engine not initialized.")
             return
         }
 
-        agoraKit.enableVideo()  // Enable video functionality
-        startPreview()  // Start the local preview
-        joinChannel()  // Join the Agora channel
+        agoraKit.enableVideo()
+        startPreview()
+        joinChannel()
     }
     
 }
@@ -171,4 +164,3 @@ extension ViewController: AgoraRtcEngineDelegate {
         agoraKit.setupRemoteVideo(videoCanvas)
     }
 }
-
